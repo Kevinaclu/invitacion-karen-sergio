@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.4",
+    "@astrojs/vercel": "^8.0.1",
     "@fontsource-variable/playfair-display": "^5.1.1",
     "@fontsource/great-vibes": "^5.1.1",
     "astro": "^5.1.2",
