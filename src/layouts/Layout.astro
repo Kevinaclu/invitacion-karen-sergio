@@ -1,22 +1,36 @@
+---
+import "@fontsource/great-vibes";
+import "@fontsource-variable/playfair-display";
+---
+
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Invitación de boda de Karen y Sergio" />
+    <meta name="author" content="Kevin Acosta Luna" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Sergio y Karen</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+  <script
+    defer
+    src="https://unpkg.com/tailwindcss-intersect@2.x.x/dist/observer.min.js"
+  ></script>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    /* overflow: hidden; */
+  }
 </style>

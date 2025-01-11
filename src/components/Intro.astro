@@ -1,0 +1,42 @@
+<div id="wrapper" class="absolute top-0 w-screen h-screen z-50">
+  <div class="w-full h-full relative">
+    <div
+      id="letter-left"
+      class="absolute top-0 left-0 w-1/2 h-full bg-blue-400 transition-all duration-1000"
+    >
+    </div>
+    <div
+      id="letter-rigth"
+      class="absolute top-0 left-1/2 w-1/2 h-full bg-green-400 transition-all duration-1000"
+    >
+    </div>
+    <button
+      id="entry-point"
+      class="absolute top-1/2 left-1/2 w-14 h-14 -translate-x-1/2 -translate-y-1/2 origin-center bg-yellow-300 animate-scale-pulse"
+      >K & S</button
+    >
+  </div>
+</div>
+
+<script>
+  document.getElementById("entry-point")?.addEventListener("click", () => {
+    document
+      .getElementById("letter-rigth")
+      ?.classList.toggle("translate-x-full");
+    document
+      .getElementById("letter-left")
+      ?.classList.toggle("-translate-x-full");
+
+    document
+      .getElementById("entry-point")
+      ?.classList.remove("animate-scale-pulse");
+    document.getElementById("entry-point")?.classList.add("animate-rotate-out");
+    setTimeout(() => {
+      document.getElementById("wrapper")?.classList.add("hidden");
+    }, 1000);
+
+    document.getElementById("hero-title")?.classList.add("motion-preset-fade");
+
+    document.body.classList.add("overflow-scroll");
+  });
+</script>
