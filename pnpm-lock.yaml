@@ -11,7 +11,13 @@ dependencies:
   '@astrojs/vercel':
     specifier: ^8.0.1
     version: 8.0.1(astro@5.1.2)
+  '@fontsource-variable/bodoni-moda':
+    specifier: ^5.1.1
+    version: 5.1.1
   '@fontsource-variable/playfair-display':
+    specifier: ^5.1.1
+    version: 5.1.1
+  '@fontsource-variable/raleway':
     specifier: ^5.1.1
     version: 5.1.1
   '@fontsource/great-vibes':
@@ -600,8 +606,16 @@ packages:
     dev: false
     optional: true
 
+  /@fontsource-variable/bodoni-moda@5.1.1:
+    resolution: {integrity: sha512-2WKsU8gfVKyi9pK9vppxYIpRRHG4+3bXR5jc5Y1IAdRAzkAB24C/kFg9E7vBqcNubW1cX1DFFK2hroAqHvtFTw==}
+    dev: false
+
   /@fontsource-variable/playfair-display@5.1.1:
     resolution: {integrity: sha512-89gLVOcVRIp0aayWwTcaLGQxhxDT2ZIv7cFU/BjxcWA8iALi8SrlT7dNHdhakb8MeXc0UUw9n8k6kG+jWvX61A==}
+    dev: false
+
+  /@fontsource-variable/raleway@5.1.1:
+    resolution: {integrity: sha512-PWApLoy2/nmrU+1KjtbEAB3kZFbb/kevzkAS57Pt9TAf3OybfCPpdevlT2hQI9lQEclYHMWXEHBL6vP7MNmjMg==}
     dev: false
 
   /@fontsource/great-vibes@5.1.1:

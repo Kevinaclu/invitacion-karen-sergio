@@ -5,6 +5,8 @@ export default {
     fontFamily: {
       greatVibes: ["'great vibes'", "cursive"],
       playfair: ["'Playfair Display Variable'", "serif"],
+      raleway: ["'Raleway Variable'", "sans-serif"],
+      bodoni: ["'Bodoni Moda Variable'", "serif"],
     },
     extend: {
       boxShadow: {

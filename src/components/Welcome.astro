@@ -4,52 +4,54 @@ import Clock from "./Clock.astro";
 import vestimentaImg from "../assets/vestimenta.png";
 ---
 
-<section class="text-center font-playfair py-8 gap-4 flex flex-col">
-  <h3 class="font-semibold text-3xl">¡Nos casamos!</h3>
-  <p class="text-xl">
-    Empieza la cuenta regresiva<br />Sábado 15 de Marzo de 2025
-  </p>
+<section class="text-center py-8 gap-6 flex flex-col">
+  <h3 class="font-bold text-4xl font-bodoni">¡Nos casamos!</h3>
+  <p class="text-xl font-raleway">Sábado 15 de Marzo de 2025</p>
   <Clock />
 </section>
 
-<section class="font-greatVibes text-center py-8 gap-4 flex flex-col">
+<section
+  class="font-greatVibes text-center py-8 gap-4 flex flex-col border-t-2 border-double"
+>
   <h3 class="text-3xl">Con la bendición de Dios y nuestros padres</h3>
-  <span class="font-playfair text-xl">Padres de la novia</span>
+  <span class="font-bodoni text-xl">Padres de la novia</span>
   <p class="text-2xl">
     Wilfredo Diego Castro Duarte <br />
     Edna Patricia Grijalva Ruíz
   </p>
-  <span class="font-playfair text-xl">Padres del novio</span>
+  <span class="font-bodoni text-xl">Padres del novio</span>
   <p class="text-2xl">
     Sergio Villegas Villegas <br />
     Carolina Valenzuela Barreras
   </p>
 </section>
 
-<section class="font-greatVibes text-center py-8 gap-4 flex flex-col">
+<section
+  class="font-greatVibes text-center py-8 gap-4 flex flex-col border-t-2 border-double"
+>
   <h3 class="text-3xl">Padrinos</h3>
-  <span class="font-playfair text-xl">Velación</span>
+  <span class="font-bodoni text-xl">Velación</span>
   <div>
-    <span class="font-playfair">Novia</span>
+    <span class="font-bodoni font-light">Novia</span>
     <p class="text-2xl">
       Claudia Veronica de Bojorquez <br /> Carlos Bojorquez
     </p>
   </div>
   <div>
-    <span class="font-playfair">Novio</span>
+    <span class="font-bodoni font-light">Novio</span>
     <p class="text-2xl">
       Erika Valenzuela Barreras <br /> Jorge Alfredo Alvarez López
     </p>
   </div>
-  <span class="font-playfair text-xl">Lazo</span>
+  <span class="font-bodoni text-xl">Lazo</span>
   <p class="text-2xl">
     Edna Stephanie Castro Grijalva <br /> Luis Alberto Peña Moreno
   </p>
-  <span class="font-playfair text-xl">Arras</span>
+  <span class="font-bodoni text-xl">Arras</span>
   <p class="text-2xl">
     Rocio Carolina Villegas Valenzuela <br /> Ramon Alfredo Feliciano Lopez
   </p>
-  <span class="font-playfair text-xl">Anillos</span>
+  <span class="font-bodoni text-xl">Anillos</span>
   <p class="text-2xl">
     Martha Beatriz Villegas Cota <br /> Pastor Ruben Gil Guerrero
   </p>
@@ -57,40 +59,50 @@ import vestimentaImg from "../assets/vestimenta.png";
 
 <section
   id="itinerary"
-  class="font-playfair py-8 gap-4 flex flex-col items-center"
+  class="font-playfair py-8 gap-4 flex flex-col items-center border-t-2 border-double"
 >
   <h3 class="font-greatVibes text-center text-3xl">Itinerario</h3>
-  <ul class="font-playfair text-center flex flex-col gap-6">
-    <li class="flex flex-col items-center gap-6">
-      <p>Ceremonia religiosa</p>
-      <p>03:00 pm - Iglesia Cristo Rey</p>
+  <ul class="font-raleway text-center flex flex-col sm:flex-row gap-6">
+    <li
+      class="flex flex-col justify-between items-center gap-6 shadow-xl p-8 rounded-2xl"
+    >
+      <div>
+        <p class="font-bodoni font-medium text-lg">Ceremonia religiosa</p>
+        <p class="font-raleway">03:00 pm - Iglesia Cristo Rey</p>
+      </div>
       <Image
         src="https://lh5.googleusercontent.com/p/AF1QipM3Pt3I-WXGipMMUSFKFxTFIBtpZ8WZs_bRJBBM=w408-h544-k-no"
         alt="Iglesia Cristo Rey"
         width={100}
         height={100}
-        class="rounded-full w-32 h-32 shadow-slate-500 shadow-lg"
+        class="rounded-full w-52 h-52 shadow-inner"
       />
     </li>
-    <li class="flex flex-col items-center gap-6">
-      <p>Ceremonia civil</p>
-      <p>07:00 pm - Rancho El Tabare</p>
-      <p>Recepción</p>
-      <p>08:00 pm - Rancho El Tabare</p>
+    <li class="flex flex-col items-center gap-6 shadow-xl p-8 rounded-2xl">
+      <div>
+        <p class="font-bodoni font-medium text-lg">Ceremonia civil</p>
+        <p class="font-raleway">07:00 pm - Rancho El Tabare</p>
+      </div>
+      <div>
+        <p class="font-bodoni font-medium text-lg">Recepción</p>
+        <p class="font-raleway">08:00 pm - Rancho El Tabare</p>
+      </div>
       <Image
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHWDpV4vM6NhU131HbStNWqTemsACWXRFj8g&s"
         alt="Imagen de el Rancho el tabare"
         width={100}
         height={100}
-        class="rounded-full w-32 h-32 shadow-slate-500 shadow-lg"
+        class="rounded-full w-52 h-52 shadow-inner"
       />
     </li>
   </ul>
 </section>
 
-<section class="text-center py-8 gap-4 flex flex-col">
+<section class="text-center py-8 gap-4 flex flex-col border-t-2 border-double">
   <h3 class="text-3xl font-greatVibes">Mesa de regalos</h3>
-  <div class="flex flex-col justify-center items-center gap-4">
+  <div
+    class="flex flex-col justify-center items-center gap-4 p-8 shadow-xl rounded-xl m-auto"
+  >
     <Image
       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1yrFd3Eg00OX4ibmirdehcSy0xhgTQCsmnw&s"
       alt="Logo de tienda liverpool"
@@ -107,15 +119,16 @@ import vestimentaImg from "../assets/vestimenta.png";
   </div>
 </section>
 
-<section class="text-center py-8 gap-4 flex flex-col">
+<section class="text-center py-8 gap-4 flex flex-col border-t-2 border-double">
   <h3 class="text-3xl font-greatVibes">Código de vestimenta</h3>
   <div class="flex items-center flex-col gap-4">
     <Image
       src={vestimentaImg}
       alt="Imagen que indica el código de vestimenta que se debe usar, el cual indica que es formal"
       width={300}
+      height={300}
     />
-    <p class="text-xl font-playfair">Formal</p>
+    <p class="text-xl font-semibold font-bodoni">Formal</p>
 
     <strong class="font-playfair font-bold text-2xl"
       >Respetuosamente NO NIÑOS</strong
