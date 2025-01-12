@@ -10,7 +10,7 @@ export default {
     },
     extend: {
       boxShadow: {
-        "inner-hero-lg": "inset 0px 120px 90px 34px rgba(0,0,0,0.75)",
+        "inner-hero-lg": "inset 0px 0px 90px 80px rgba(0,0,0,0.75)",
       },
       animation: {
         "rotate-out": "rotate-out 1s ease-out both",
