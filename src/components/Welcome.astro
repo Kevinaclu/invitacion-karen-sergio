@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import Clock from "./Clock.astro";
-import vestimentaImg from "../assets/vestimenta.png";
 ---
 
 <section class="text-center py-8 gap-6 flex flex-col">
@@ -10,9 +9,7 @@ import vestimentaImg from "../assets/vestimenta.png";
   <Clock />
 </section>
 
-<section
-  class="font-greatVibes text-center py-8 gap-4 flex flex-col border-t-2 border-double"
->
+<section class="font-greatVibes text-center py-8 gap-4 flex flex-col">
   <h3 class="text-3xl">Con la bendición de Dios y nuestros padres</h3>
   <span class="font-bodoni text-xl">Padres de la novia</span>
   <p class="text-2xl">
@@ -26,9 +23,7 @@ import vestimentaImg from "../assets/vestimenta.png";
   </p>
 </section>
 
-<section
-  class="font-greatVibes text-center py-8 gap-4 flex flex-col border-t-2 border-double"
->
+<section class="font-greatVibes text-center py-8 gap-4 flex flex-col">
   <h3 class="text-3xl">Padrinos</h3>
   <span class="font-bodoni text-xl">Velación</span>
   <div>
@@ -43,15 +38,15 @@ import vestimentaImg from "../assets/vestimenta.png";
       Erika Valenzuela Barreras <br /> Jorge Alfredo Alvarez López
     </p>
   </div>
-  <span class="font-bodoni text-xl">Lazo</span>
+  <span class="font-bodoni text-xl mt-8">Lazo</span>
   <p class="text-2xl">
     Edna Stephanie Castro Grijalva <br /> Luis Alberto Peña Moreno
   </p>
-  <span class="font-bodoni text-xl">Arras</span>
+  <span class="font-bodoni text-xl mt-8">Arras</span>
   <p class="text-2xl">
     Rocio Carolina Villegas Valenzuela <br /> Ramon Alfredo Feliciano Lopez
   </p>
-  <span class="font-bodoni text-xl">Anillos</span>
+  <span class="font-bodoni text-xl mt-8">Anillos</span>
   <p class="text-2xl">
     Martha Beatriz Villegas Cota <br /> Pastor Ruben Gil Guerrero
   </p>
@@ -59,12 +54,12 @@ import vestimentaImg from "../assets/vestimenta.png";
 
 <section
   id="itinerary"
-  class="font-playfair py-8 gap-4 flex flex-col items-center border-t-2 border-double"
+  class="font-playfair py-8 gap-4 flex flex-col items-center"
 >
   <h3 class="font-greatVibes text-center text-3xl">Itinerario</h3>
   <ul class="font-raleway text-center flex flex-col sm:flex-row gap-6">
     <li
-      class="flex flex-col justify-between items-center gap-6 shadow-xl p-8 rounded-2xl"
+      class="flex flex-col justify-between items-center gap-6 shadow-xl p-8 rounded-2xl bg-white"
     >
       <div>
         <p class="font-bodoni font-medium text-lg">Ceremonia religiosa</p>
@@ -78,7 +73,9 @@ import vestimentaImg from "../assets/vestimenta.png";
         class="rounded-full w-52 h-52 shadow-inner"
       />
     </li>
-    <li class="flex flex-col items-center gap-6 shadow-xl p-8 rounded-2xl">
+    <li
+      class="flex flex-col items-center gap-6 shadow-xl p-8 rounded-2xl bg-white"
+    >
       <div>
         <p class="font-bodoni font-medium text-lg">Ceremonia civil</p>
         <p class="font-raleway">07:00 pm - Rancho El Tabare</p>
@@ -98,11 +95,14 @@ import vestimentaImg from "../assets/vestimenta.png";
   </ul>
 </section>
 
-<section class="text-center py-8 gap-4 flex flex-col border-t-2 border-double">
+<section class="text-center py-8 gap-4 flex flex-col">
   <h3 class="text-3xl font-greatVibes">Mesa de regalos</h3>
   <div
-    class="flex flex-col justify-center items-center gap-4 p-8 shadow-xl rounded-xl m-auto"
+    class="flex flex-col justify-center items-center gap-4 py-8 shadow-xl rounded-xl m-auto bg-white"
   >
+    <p class="text-sm font-raleway mb-4">
+      <span class="font-medium">Tu presencia es nuestro mayor regalo.</span>
+    </p>
     <Image
       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1yrFd3Eg00OX4ibmirdehcSy0xhgTQCsmnw&s"
       alt="Logo de tienda liverpool"
@@ -116,14 +116,22 @@ import vestimentaImg from "../assets/vestimenta.png";
       class="text-lg font-normal px-4 py-2 bg-orange-400 text-white rounded-sm shadow-lg"
       >Ir a mesa de regalos</a
     >
+    <div
+      class="border-t-4 border-double border-gray-500 w-full flex flex-col items-center mt-8"
+    >
+      <img class="mt-8" src="/img/letter.png" alt="" width={200} />
+      <p class="text-sm mt-4 w-5/6">
+        Si deseas compartir un detalle, lo agradeceremos mucho.
+      </p>
+    </div>
   </div>
 </section>
 
-<section class="text-center py-8 gap-4 flex flex-col border-t-2 border-double">
+<section class="text-center py-8 gap-4 flex flex-col">
   <h3 class="text-3xl font-greatVibes">Código de vestimenta</h3>
   <div class="flex items-center flex-col gap-4">
-    <Image
-      src={vestimentaImg}
+    <img
+      src="/img/vestimenta.png"
       alt="Imagen que indica el código de vestimenta que se debe usar, el cual indica que es formal"
       width={300}
       height={300}
