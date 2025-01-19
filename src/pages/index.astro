@@ -5,6 +5,7 @@ import ClockSection from "../components/ClockSection.svelte";
 import Welcome from "../components/Welcome.astro";
 import ParentsSection from "../components/ParentsSection.astro";
 import GodParents from "../components/GodParents.astro";
+import ItinerarySection from "../components/ItinerarySection.svelte";
 ---
 
 <Layout>
@@ -16,4 +17,5 @@ import GodParents from "../components/GodParents.astro";
   <ClockSection client:load />
   <ParentsSection />
   <GodParents />
+  <ItinerarySection client:only="svelte" />
 </Layout>
