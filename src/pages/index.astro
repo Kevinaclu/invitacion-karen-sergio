@@ -1,14 +1,19 @@
 ---
-import Hero from "../components/Hero.astro";
-import Intro from "../components/Intro.astro";
-import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
+import HeroSection from "../components/HeroSection.svelte";
+import ClockSection from "../components/ClockSection.svelte";
+import Welcome from "../components/Welcome.astro";
+import ParentsSection from "../components/ParentsSection.astro";
+import GodParents from "../components/GodParents.astro";
 ---
 
 <Layout>
-  <Intro />
-  <Hero />
-  <div class="bg-white bg-[url('/img/noise-3.avif')]">
+  <!-- <Intro /> -->
+  <HeroSection client:load />
+  <div class="bg-white bg-[url('/img/noise-3.avif')] z-40 relative">
     <Welcome />
   </div>
+  <ClockSection client:load />
+  <ParentsSection />
+  <GodParents />
 </Layout>
