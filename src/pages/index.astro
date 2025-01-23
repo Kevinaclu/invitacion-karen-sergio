@@ -6,6 +6,10 @@ import Welcome from "../components/Welcome.astro";
 import ParentsSection from "../components/ParentsSection.astro";
 import GodParents from "../components/GodParents.astro";
 import ItinerarySection from "../components/ItinerarySection.svelte";
+import Locations from "../components/Locations.astro";
+import CodeDress from "../components/CodeDress.astro";
+import GiftTable from "../components/GiftTable.svelte";
+import Photo from "../components/Photo.svelte";
 ---
 
 <Layout>
@@ -18,4 +22,15 @@ import ItinerarySection from "../components/ItinerarySection.svelte";
   <ParentsSection />
   <GodParents />
   <ItinerarySection client:only="svelte" />
+  <Locations />
+  <GiftTable client:load />
+  <CodeDress />
+  <Photo client:load />
+  <div class="bg-[#d38301] relative z-40">
+    <div class="grid grid-cols-1 justify-center text-white">
+      <h1 class="text-center sm:p-7 p-5 text-2xl font-serif2">
+        Nos encantaría que nos acompañes en este día tan especial
+      </h1>
+    </div>
+  </div>
 </Layout>
