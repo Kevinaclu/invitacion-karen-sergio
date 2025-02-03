@@ -25,7 +25,7 @@
       </h1>
     </div>
     <div class="flex flex-grow items-end font-greatVibes text-white text-4xl">
-      <h2 class="drop-shadow-5xl mb-12">05•03•2025</h2>
+      <h2 class="drop-shadow-5xl mb-12">15•03•2025</h2>
     </div>
   </div>
 </Scroller>

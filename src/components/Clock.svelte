@@ -7,7 +7,7 @@
   let minutes = "00";
   let seconds = "00";
 
-  const weddingDate = new Date(2025, 2, 15).getTime();
+  const weddingDate = new Date(2025, 2, 15, 15).getTime();
 
   const updateCountdown = () => {
     const now = new Date().getTime();
