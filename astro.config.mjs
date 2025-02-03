@@ -7,9 +7,11 @@ import vercel from "@astrojs/vercel";
 
 import svelte from "@astrojs/svelte";
 
+import db from "@astrojs/db";
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), svelte()],
+  integrations: [tailwind(), svelte(), db()],
   devToolbar: { enabled: false },
   adapter: vercel(),
   output: "server",
