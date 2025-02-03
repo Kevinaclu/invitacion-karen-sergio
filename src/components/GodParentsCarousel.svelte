@@ -37,18 +37,30 @@
 
   <GodParentCarouselItem
     title={"Velación"}
-    godParents={["Tania", "Jose", "Jose 2"]}
-  />
-  <GodParentCarouselItem
-    title={"Arras"}
-    godParents={["Tania", "Jose", "Jose 2"]}
-  />
-  <GodParentCarouselItem
-    title={"Anillos"}
-    godParents={["Tania", "Jose", "Jose 2"]}
+    godParents={[
+      "Veronica Aguilar Ruíz",
+      "Carlos Bojorquez",
+      "Maria Luz Corral Ríos",
+      "José Noe Castro Duarte",
+      "Erika Valenzuela Barreras",
+      "Jorge Alfredo Alvarez López",
+      "Adriana Silva Rodríguez",
+      "Humberto Villegas Villegas",
+    ]}
   />
   <GodParentCarouselItem
     title={"Lazo"}
-    godParents={["Tania", "Jose", "Jose 2"]}
+    godParents={["Edna Stephanie Castro Grijalva", "Luis Alberto Peña Moreno"]}
+  />
+  <GodParentCarouselItem
+    title={"Arras"}
+    godParents={[
+      "Rocio Carolina Villegas Valenzuela",
+      "Ramon Alfredo Feliciano Lopez",
+    ]}
+  />
+  <GodParentCarouselItem
+    title={"Anillos"}
+    godParents={["Martha Beatriz Villegas Cota", "Pastor Ruben Gil Guerrero"]}
   />
 </Carousel>

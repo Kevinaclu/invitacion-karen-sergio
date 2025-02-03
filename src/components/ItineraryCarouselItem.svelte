@@ -1,11 +1,12 @@
 <script>
   export let title;
   export let date;
+  export let src;
 </script>
 
 <div class="w-3/4 text-center mx-auto p-2 sm:p-5">
   <lord-icon
-    src="https://cdn.lordicon.com/rlngnytn.json"
+    {src}
     trigger="loop"
     delay="1000"
     colors="primary:#fff,secondary:#fff"

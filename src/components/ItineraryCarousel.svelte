@@ -35,5 +35,34 @@
     >
   </div>
 
-  <ItineraryCarouselItem title={"Iglesia"} date={"3 - 4:00pm"} />
+  <ItineraryCarouselItem
+    title={"Misa"}
+    date={"3:00 pm"}
+    src="https://cdn.lordicon.com/rlngnytn.json"
+  />
+  <ItineraryCarouselItem
+    title={"Ceremonia Civil"}
+    date={"7:00 pm"}
+    src={"https://cdn.lordicon.com/cykiczdp.json"}
+  />
+  <ItineraryCarouselItem
+    title={"Recepción"}
+    date={"8:00 pm"}
+    src="https://cdn.lordicon.com/wxnxiano.json"
+  />
+  <ItineraryCarouselItem
+    title={"Presentación de los novios"}
+    date={"8:30 pm"}
+    src="https://cdn.lordicon.com/aydxrkfl.json"
+  />
+  <ItineraryCarouselItem
+    title={"Cena"}
+    date={"9:00 pm"}
+    src="https://cdn.lordicon.com/txqkxliv.json"
+  />
+  <ItineraryCarouselItem
+    title={"Fiesta"}
+    date={"9:30 pm"}
+    src="https://cdn.lordicon.com/ohcuigqh.json"
+  />
 </Carousel>

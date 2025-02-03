@@ -10,6 +10,7 @@
   }
 </style>
 
+<audio id="audio" src="/mp3/song.mp3" loop></audio>
 <div id="wrapper" class="fixed w-screen h-screen z-50 overflow-hidden">
   <div class="w-full h-full relative">
     <div
@@ -43,6 +44,8 @@
       .getElementById("entry-point")
       ?.classList.remove("animate-scale-pulse");
     document.getElementById("entry-point")?.classList.add("animate-rotate-out");
+
+    (document.getElementById("audio") as HTMLAudioElement)?.play();
     setTimeout(() => {
       document.getElementById("wrapper")?.remove();
     }, 1000);
