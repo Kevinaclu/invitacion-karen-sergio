@@ -1,0 +1,29 @@
+<div class="flex flex-row">
+  <div class="flex flex-row text-center gap-6 w-full">
+    <div
+      class="card flex flex-col items-start bg-white border-[#C7B89F] border-double border-4 rounded-sm px-4 py-6 my-4 mx-2 w-full"
+    >
+      <slot />
+    </div>
+  </div>
+</div>
+
+<script>
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach((card) => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(
+            "animate-fade-in-left",
+            "animate-duration-1000",
+            "animate-delay-100"
+          );
+        }
+      });
+    });
+
+    observer.observe(card);
+  });
+</script>

@@ -1,0 +1,36 @@
+---
+import { Comentario } from "astro:db";
+import { db } from "astro:db";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
+const comentarios = await db.select().from(Comentario);
+comentarios.sort((a, b) => {
+  if (a.fecha > b.fecha) return -1;
+  return 0;
+});
+---
+
+<Layout title="Comentarios">
+  <div class="p-16 flex flex-col gap-4">
+    {
+      comentarios.map((comentario) => (
+        <Card>
+          <div class="flex items-center gap-4">
+            <h2 class="font-baskerville text-xl">{comentario.nombre}</h2>
+            <p>
+              {comentario.asistir ? (
+                <span>&#9989;</span>
+              ) : (
+                <span>&#10060;</span>
+              )}
+            </p>
+          </div>
+          <p class="text-start mt-4 font-cormorant text-xl">
+            {comentario.mensaje}
+          </p>
+        </Card>
+      ))
+    }
+  </div>
+</Layout>
