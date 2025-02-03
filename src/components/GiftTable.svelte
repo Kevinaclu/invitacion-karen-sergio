@@ -41,7 +41,7 @@
                 <div class="mt-2">
                   <div class="flex justify-center items-center w-full py-1">
                     <a
-                      href="https://mesaderegalos.liverpool.mx/LP/51594972/Sergio-Karen_Patricia"
+                      href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51594972?_ga=2.137977584.1995845095.1736628133-357178916.1736061064"
                       class="p-2 my-auto bg-[#d38301] shadow-xl text-white rounded hover:bg-white hover:text-black"
                       ><i class="fa fa-gift pr-2"></i>Ir a mesa de regalos</a
                     >
