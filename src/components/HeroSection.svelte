@@ -7,7 +7,7 @@
 <Scroller top={0} bottom={0.3} bind:index bind:offset bind:progress>
   <div slot="background">
     <div
-      class="bg-cover bg-center h-screen backdrop-filter backdrop-brightness-[75%] relative w-full z-40"
+      class="bg-cover bg-[left_calc(40%)_top_calc(40%)] h-screen backdrop-filter backdrop-brightness-[75%] relative w-full z-40"
       style="background-image: url('img/hero.jpeg');"
     ></div>
   </div>

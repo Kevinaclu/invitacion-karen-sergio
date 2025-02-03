@@ -36,12 +36,17 @@
   </div>
 
   <GodParentCarouselItem
-    title={"Velación"}
+    title={"Velación de Novia"}
     godParents={[
-      "Veronica Aguilar Ruíz",
+      "Veronica de Bojorquez",
       "Carlos Bojorquez",
       "Maria Luz Corral Ríos",
       "José Noe Castro Duarte",
+    ]}
+  />
+  <GodParentCarouselItem
+    title={"Velación de Novio"}
+    godParents={[
       "Erika Valenzuela Barreras",
       "Jorge Alfredo Alvarez López",
       "Adriana Silva Rodríguez",

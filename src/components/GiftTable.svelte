@@ -41,7 +41,7 @@
                 <div class="mt-2">
                   <div class="flex justify-center items-center w-full py-1">
                     <a
-                      href="https://www.amazon.com.mx/wedding/registry/1K50BCSGP456X"
+                      href="https://mesaderegalos.liverpool.mx/LP/51594972/Sergio-Karen_Patricia"
                       class="p-2 my-auto bg-[#d38301] shadow-xl text-white rounded hover:bg-white hover:text-black"
                       ><i class="fa fa-gift pr-2"></i>Ir a mesa de regalos</a
                     >
