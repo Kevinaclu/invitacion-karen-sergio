@@ -12,6 +12,7 @@ import GiftTable from "../components/GiftTable.svelte";
 import Photo from "../components/Photo.svelte";
 import Intro from "../components/Intro.astro";
 import Confirmation from "../components/Confirmation.astro";
+import ImageGallery from "../components/ImageGallery.svelte";
 ---
 
 <Layout>
@@ -37,5 +38,8 @@ import Confirmation from "../components/Confirmation.astro";
   </div>
   <div class="relative z-40">
     <Confirmation />
+  </div>
+  <div class="relative z-40">
+    <ImageGallery client:only="svelte" />
   </div>
 </Layout>

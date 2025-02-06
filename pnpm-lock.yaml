@@ -35,6 +35,9 @@ dependencies:
   astro:
     specifier: ^5.1.2
     version: 5.1.2(typescript@5.7.3)
+  photoswipe:
+    specifier: ^5.4.4
+    version: 5.4.4
   svelte:
     specifier: ^5.19.0
     version: 5.19.0
@@ -3437,6 +3440,11 @@ packages:
 
   /pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
+    dev: false
+
+  /photoswipe@5.4.4:
+    resolution: {integrity: sha512-WNFHoKrkZNnvFFhbHL93WDkW3ifwVOXSW3w1UuZZelSmgXpIGiZSNlZJq37rR8YejqME2rHs9EhH9ZvlvFH2NA==}
+    engines: {node: '>= 0.12.0'}
     dev: false
 
   /picocolors@1.1.1:
