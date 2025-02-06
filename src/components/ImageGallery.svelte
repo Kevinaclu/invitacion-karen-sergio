@@ -229,7 +229,7 @@
   <h3 class="font-greatVibes text-5xl text-center my-8">
     Conoce nuestra historia
   </h3>
-  <div class="pswp-gallery flex flex-wrap py-1" id="gallery">
+  <div class="pswp-gallery flex flex-wrap justify-center" id="gallery">
     {#each images as image}
       <a
         href={image.largeURL}
@@ -238,7 +238,7 @@
         target="_blank"
         rel="noreferrer"
       >
-        <img class="w-20 h-20" src={image.largeURL} alt="" />
+        <img class="w-28 h-24" src={image.largeURL} alt="" />
       </a>
     {/each}
   </div>
